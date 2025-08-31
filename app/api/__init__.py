@@ -1,5 +1,2 @@
-from fastapi import APIRouter
-from app.api import board
+from fastapi import APIRouter, HTTPException
 
-api_router = APIRouter()
-api_router.include_router(board.router, prefix="/boards", tags=["boards"])
